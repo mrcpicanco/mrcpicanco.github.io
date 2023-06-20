@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-20T15:28:34-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">marcopicanco.dev</title><subtitle>Administrador, flamenguista, desenvolvedor de sistemas, ruby, ruby on rails, crystal, science computer, go</subtitle><author><name>Marco Picanço</name></author><entry><title type="html">Por que não um blog usando Jekyll?</title><link href="http://localhost:4000/blog/welcome-to-jekyll/" rel="alternate" type="text/html" title="Por que não um blog usando Jekyll?" /><published>2023-06-19T16:34:30-03:00</published><updated>2023-06-19T16:34:30-03:00</updated><id>http://localhost:4000/blog/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/welcome-to-jekyll/">&lt;p&gt;O Jekyll é um gerador de sites estáticos – de fato, ele é o mais popular dentre eles. Um site estático não possui componentes rodando no lado do servidor: ele usa tecnologias web padrão (HTML5, JS, CSS) e não interage com componentes dinâmicos (um banco de dados, por exemplo).&lt;/p&gt;
+
+&lt;p&gt;É versátil, podendo ser usado para criar blogs, landing pages, sites institucionais, entre outros. O conteúdo é criado através de simples arquivos de texto no formato MarkDown. Cada vez que você atualiza estes arquivos, estes são compilados (transformados) em um site completo.&lt;/p&gt;
+
+&lt;h2 id=&quot;instalação-no-ubuntu&quot;&gt;Instalação no Ubuntu&lt;/h2&gt;
+
+&lt;p&gt;Instale Ruby e outros pré-requisitos.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;ruby-full build-essential zlib1g-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Evite instalar pacotes RubyGems (chamados de gems) como usuário root. Em vez disso, configure um diretório de instalação do gem para sua conta de usuário. Os seguintes comandos adicionarão variáveis ​​de ambiente ao seu ~/.bashrcarquivo para configurar o caminho de instalação da gem:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo '# Install Ruby Gems to ~/gems' &amp;gt;&amp;gt; ~/.bashrc
+echo 'export GEM_HOME=&quot;$HOME/gems&quot;' &amp;gt;&amp;gt; ~/.bashrc
+echo 'export PATH=&quot;$HOME/gems/bin:$PATH&quot;' &amp;gt;&amp;gt; ~/.bashrc
+source ~/.bashrc
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Finalmente, instale Jekyll e Bundler:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install jekyll bundler
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;É isso! Você está pronto para começar a usar o Jekyll.&lt;/p&gt;
+
+&lt;h2 id=&quot;referência&quot;&gt;Referência&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/installation/ubuntu/&quot;&gt;jekyllrb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Marco Picanço</name></author><category term="blog" /><category term="início" /><category term="artigo" /><summary type="html">O Jekyll é um gerador de sites estáticos – de fato, ele é o mais popular dentre eles. Um site estático não possui componentes rodando no lado do servidor: ele usa tecnologias web padrão (HTML5, JS, CSS) e não interage com componentes dinâmicos (um banco de dados, por exemplo).</summary></entry></feed>
